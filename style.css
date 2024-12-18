@@ -4,6 +4,10 @@
     font-family: "Montserrat", serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 a{
     color: inherit;
     text-decoration: none;
@@ -92,8 +96,9 @@ header button{
 .category > .about > button{
     display: flex;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
-    padding: 13px;
+    padding: 20px;
     border:none;
     border-radius: 50%;
     background: linear-gradient(0.6turn, #F8A3A8, #F3C6A5, #E5E1AB);
@@ -138,9 +143,168 @@ header button{
 .categories-mini{
     display: flex;
     flex-direction: column;
+    gap: 42px;
 }
 
 .categories-mini > div{
     display: flex;
+    flex-direction: row;
+    gap: 47px;
+    padding: 47px 66px;
+    box-shadow: 4px 7px 27px rgba(0,0,0,0.07);
+    max-width: 467px;
+}
+
+.categories-mini > div > p{
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 231px;
+    text-transform: uppercase;
+}
+
+.categories-mini > div > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    border:none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(0.6turn, #F8A3A8, #F3C6A5, #E5E1AB);
+}
+
+
+.about-info-partner .row-text{
+    display: flex;
+    gap: 62px;
+}
+
+.about-info-partner .row-text :first-child{
+    margin-bottom: 7px;
+}
+
+.about-info-partner button{
+    padding: 19px 77px;
+    background-color: rgba(14,14,14,1);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+}
+
+.some-italic-text{
+    font-style: italic;
+    font-size: 96px;
+    color: rgba(14,14,14,0.4);
+    text-wrap: nowrap;
+    text-transform: uppercase;
+}
+
+.gradient-italic-text{
+    background-image: linear-gradient(2deg, #E5E1AB, #F3C6A5, #F8A3A8);
+    background-clip: text;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 117px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 315px;
+    font-style: italic;
+    color: transparent
+}
+
+.buy-sub{
+    display: flex; 
     flex-direction: column;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.buy-sub>.cards{
+    display: flex; 
+    gap: 30px; 
+    margin-top: 111px;
+}
+
+.buy-sub>.cards>.card{
+    box-shadow: 4px 7px 27px rgba(0,0,0,0.07);
+    padding: 51px 67px;
+    padding-right: 131px;
+}
+
+.buy-sub>.cards>.card>div>p{
+    display: flex; 
+    gap: 16px; 
+    font-size: 23px;
+}
+
+.buy-sub>.cards>.card>div>p>img{
+    position: relative; 
+    top: 7px;
+}
+
+.buy-sub>.cards>.card>button{
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    font-family: "Instrument Sans", serif;
+    padding: 14px 39px;
+    font-size: 26px;
+    border-radius: 129px;
+    color: white;
+    border: none;
+    background-color: rgba(14,14,14,1);
+}
+
+.reviews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 109px;
+}
+
+.reviews > :first-child{
+    display: flex;
+    gap: 490px;
+    align-items: flex-end;
+}
+
+.reviews > :first-child > p{
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 598px;
+}
+
+.reviews > :last-child{
+    display: flex;
+    align-items: flex-end;
+    gap: 125px;
+}
+
+.reviews > :last-child > .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.reviews > :last-child > .buttons > :first-child{
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px black;
+    padding: 13px 19px; 
+}
+
+.reviews > :last-child > .buttons > .gradient-button{
+    border-radius: 50%;
+    background: linear-gradient(0.6turn, #F8A3A8, #F3C6A5, #E5E1AB);
+    border: none;
+    padding: 12px 19px; 
+}
+
+footer{
+    background-color: rgba(14,14,14,1);
+    width: 100%;
 }
