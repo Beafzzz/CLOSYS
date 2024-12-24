@@ -264,6 +264,7 @@ header button{
     flex-direction: column;
     align-items: center;
     gap: 109px;
+    margin-top: 175px;
 }
 
 .reviews > :first-child{
@@ -305,6 +306,52 @@ header button{
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+    margin-top: 175px;
     background-color: rgba(14,14,14,1);
     width: 100%;
+    padding-top: 124px;
+    padding-bottom: 123px;
+}
+
+footer p{
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+footer > .top-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+}
+
+footer > .top-info > .rounded-box{
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    padding-top: 11px; 
+    padding-bottom: 11px;
+    width: fit-content;
+    border-color: white;
+}
+
+footer > .top-info > .rounded-box a{
+    color: white;
+}
+
+footer > .bottom-info{
+    display: flex;
+    gap: 197px;
+}
+
+
+footer > .bottom-info > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
